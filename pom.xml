@@ -57,30 +57,30 @@
                 </configuration>
             </plugin>
             <!-- dockerfile plugin -->
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.3</version>
-                <configuration>
-                    <!-- 生成的镜像仓库名称 -->
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                    <!-- 生成的镜像版本 -->
-                    <tag>${project.version}</tag>
-                    <!-- 推送到私有镜像仓库时需要开启安全认证 -->
-                    <!--					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>-->
-                </configuration>
-                <!-- 直接使用mvn install命令打包项目，就会自动构建镜像和推送镜像 -->
-                <executions>
-                    <execution>
-                        <id>default</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>dockerfile-maven-plugin</artifactId>-->
+<!--                <version>1.4.3</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash; 生成的镜像仓库名称 &ndash;&gt;-->
+<!--                    <repository>${docker.image.prefix}/${project.artifactId}</repository>-->
+<!--                    &lt;!&ndash; 生成的镜像版本 &ndash;&gt;-->
+<!--                    <tag>${project.version}</tag>-->
+<!--                    &lt;!&ndash; 推送到私有镜像仓库时需要开启安全认证 &ndash;&gt;-->
+<!--                    &lt;!&ndash;					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>&ndash;&gt;-->
+<!--                </configuration>-->
+<!--                &lt;!&ndash; 直接使用mvn install命令打包项目，就会自动构建镜像和推送镜像 &ndash;&gt;-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default</id>-->
+<!--                        <phase>install</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>build</goal>-->
+<!--                            <goal>push</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
 
 
 
