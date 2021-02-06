@@ -17,8 +17,8 @@ public class HelloWebfluxController {
     public String mono(){
         return "hello webflux";
     }
-    @GetMapping("test")
-    public String test(){
-        return "hello test";
-    }
+//    @GetMapping("test")
+//    public String test(){
+//        return "hello test";
+//    }
 }
