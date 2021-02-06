@@ -15,7 +15,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <!--  配置镜像前缀（就是仓库服务地址） -->
-        <docker.image.prefix>119.29.11.160:5000</docker.image.prefix>
+        <docker.image.prefix>39.106.86.240:5000</docker.image.prefix>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
